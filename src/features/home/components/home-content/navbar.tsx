@@ -39,7 +39,7 @@ export const Navbar = () => {
 	return (
 		<div className="flex uppercase justify-center flex-wrap gap-4">
 			{arr.map((item) => (
-				<div className="px-4 text-[#4a4a4a] w-auto font-bold hover:text-[#c39f76] flex items-center ">
+				<div key={item.id} className="px-4 text-[#4a4a4a] w-auto font-bold hover:text-[#c39f76] flex items-center ">
 					<Link href={''}>{item.name}</Link>
 					{item.id !== 7 && item.id !== 8 && (
 						<div className="text-xl">

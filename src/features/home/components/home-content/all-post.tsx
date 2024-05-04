@@ -7,7 +7,7 @@ export const AllPost = () => {
 		<div className="w-full flex justify-center mx-auto">
 			<div className="flex px-4 lg:px-auto gap-10 justify-center flex-wrap">
 				{initDataPost.map((item) => (
-					<div className="md:w-[200px] lg:w-[361px]  ">
+					<div key={item.id} className="md:w-[200px] lg:w-[361px]  ">
 						<div className="flex flex-col gap-7 items-center">
 							<div className="cursor-pointer">
 								<Image
