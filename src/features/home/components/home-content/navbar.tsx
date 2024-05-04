@@ -42,7 +42,9 @@ export const Navbar = () => {
 				<div className="px-4 text-[#4a4a4a] w-auto font-bold hover:text-[#c39f76] flex items-center ">
 					<Link href={''}>{item.name}</Link>
 					{item.id !== 7 && item.id !== 8 && (
-						<RiArrowDropDownFill className="text-xl" />
+						<div className="text-xl">
+							<RiArrowDropDownFill />
+						</div>
 					)}
 				</div>
 			))}

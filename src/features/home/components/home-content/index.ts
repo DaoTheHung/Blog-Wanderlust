@@ -1,3 +1,5 @@
 export * from './header'
 export * from './navbar'
 export * from './all-post'
+export * from './footer'
+export * from './mobiles'

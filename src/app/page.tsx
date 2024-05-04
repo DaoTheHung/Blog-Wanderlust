@@ -1,9 +1,9 @@
-import { AllPost, HomeList } from '@/features/home';
+import { AllPost, Footer, HomeList } from '@/features/home';
 import Image from 'next/image';
 
 export default function Home() {
 	return (
-		<div>
+		<div className="">
 			<HomeList />
 			<div className="w-full relative mb-10">
 				<Image
@@ -29,6 +29,7 @@ export default function Home() {
 				</div>
 			</div>
 			<AllPost />
+			<Footer />
 		</div>
 	);
 }

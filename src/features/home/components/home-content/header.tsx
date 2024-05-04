@@ -7,8 +7,8 @@ export const Header = () => {
 	return (
 		<div className="w-full ">
 			<div className="w-full border border-b ">
-				<div className="flex lg:w-[70%] xl:w-[1200px] mx-auto items-center justify-between py-2 ">
-					<div className="flex uppercase text-sm  text-[#818181] gap-8">
+				<div className="flex px-4 lg:px-auto lg:w-[70%] xl:w-[1200px] mx-auto items-center justify-between py-2 ">
+					<div className=" lg:flex hidden uppercase text-sm  text-[#818181] gap-8">
 						<div className="">LIÊN HỆ</div>
 						<div className="">Hello World</div>
 						<div className="">Best Hotels Resorts Awards</div>
@@ -22,8 +22,8 @@ export const Header = () => {
 					</div>
 				</div>
 			</div>
-			<div className="w-full flex justify-center my-10">
-				<div className="flex flex-col items-center">
+			<div className="w-full  flex justify-center my-10">
+				<div className="flex px-4 lg:px-auto flex-col items-center">
 					<div className="mb-[10px]">
 						<Image
 							width={350}
@@ -32,7 +32,7 @@ export const Header = () => {
 							src="https://wanderlusttips.asia/wp-content/uploads/2020/12/cropped-LOGO-Wanderlust-tips-magazine.png"
 						/>
 					</div>
-					<div className="uppercase  text-[#818181] tracking-[1px]">
+					<div className="uppercase text-center   text-[#818181] tracking-[1px]">
 						Tạp chí du lịch được yêu thích nhất Việt Nam
 					</div>
 				</div>
