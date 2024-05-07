@@ -3,49 +3,39 @@ import React from 'react';
 import { RiArrowDropDownFill } from 'react-icons/ri';
 export const Navbar = () => {
 	const arr = [
-		{
-			id: 1,
-			name: 'video'
-		},
+		
 		{
 			id: 2,
-			name: 'Tin tức'
+			name: 'Tin tức',
+			url: 'tin-tuc',
 		},
 		{
 			id: 3,
-			name: 'Điểm đến'
+			name: 'Điểm đến',
+			url: 'diem-den',
 		},
 		{
 			id: 4,
-			name: 'TRAVEL TIPS'
+			name: 'TIPS du lịch',
+			url: 'tips-du-lich',
 		},
 		{
 			id: 5,
-			name: 'ẩm thực'
+			name: 'ẩm thực',
+			url: 'am-thuc',
 		},
-		{
-			id: 6,
-			name: 'Ở ĐÂU – KHI NÀO'
-		},
-		{
-			id: 7,
-			name: 'đối thoại'
-		},
-		{
-			id: 8,
-			name: 'E.Magazine'
-		}
+		
 	];
 	return (
 		<div className="flex uppercase justify-center flex-wrap gap-4">
 			{arr.map((item) => (
 				<div key={item.id} className="px-4 text-[#4a4a4a] w-auto font-bold hover:text-[#c39f76] flex items-center ">
-					<Link href={''}>{item.name}</Link>
-					{item.id !== 7 && item.id !== 8 && (
+					<Link href={item.url}>{item.name}</Link>
+					{/* {item.id !== 7 && item.id !== 8 && (
 						<div className="text-xl">
 							<RiArrowDropDownFill />
 						</div>
-					)}
+					)} */}
 				</div>
 			))}
 		</div>

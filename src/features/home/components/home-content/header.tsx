@@ -24,13 +24,14 @@ export const Header = () => {
 			</div>
 			<div className="w-full  flex justify-center my-10">
 				<div className="flex px-4 lg:px-auto flex-col items-center">
-					<div className="mb-[10px]">
-						<Image
+					<div className="mb-[10px] font-bold text-6xl">
+						{/* <Image
 							width={350}
 							height={112}
 							alt=""
 							src="https://wanderlusttips.asia/wp-content/uploads/2020/12/cropped-LOGO-Wanderlust-tips-magazine.png"
-						/>
+						/> */}
+						Travel with us
 					</div>
 					<div className="uppercase text-center   text-[#818181] tracking-[1px]">
 						Tạp chí du lịch được yêu thích nhất Việt Nam
