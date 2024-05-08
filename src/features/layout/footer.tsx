@@ -16,13 +16,13 @@ export const Footer = () => {
 			date: '25/12/2023'
 		},
 		{
-			id: 1,
+			id: 2,
 			title: 'Khám phá vẻ đẹp truyền thống và hiện đại của Hàn Quốc trong hành trình du lịch mùa đông',
 			img: 'https://wanderlusttips.asia/wp-content/uploads/2023/12/1-Wanderlust-Tips-Kham-pha-ve-dep-truyen-thong-va-hien-dai-cua-Han-Quoc-trong-hanh-trinh-du-lich-mua-dong-650x433.png',
 			date: '25/12/2023'
 		},
 		{
-			id: 1,
+			id: 3,
 			title: 'Khám phá vẻ đẹp truyền thống và hiện đại của Hàn Quốc trong hành trình du lịch mùa đông',
 			img: 'https://wanderlusttips.asia/wp-content/uploads/2023/12/1-Wanderlust-Tips-Kham-pha-ve-dep-truyen-thong-va-hien-dai-cua-Han-Quoc-trong-hanh-trinh-du-lich-mua-dong-650x433.png',
 			date: '25/12/2023'

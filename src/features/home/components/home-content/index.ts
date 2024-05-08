@@ -1,5 +1,1 @@
-export * from './header'
-export * from './navbar'
-export * from '../../../../components/common/post'
-export * from './footer'
 export * from './mobiles'

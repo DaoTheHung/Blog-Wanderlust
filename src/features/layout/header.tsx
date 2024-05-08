@@ -2,7 +2,7 @@ import React from 'react';
 import { ImFacebook2, ImInstagram } from 'react-icons/im';
 import { FaYoutube } from 'react-icons/fa6';
 import { IoLogoTiktok } from 'react-icons/io5';
-import Image from 'next/image';
+import Link from 'next/link';
 export const Header = () => {
 	return (
 		<div className="w-full ">
@@ -24,7 +24,7 @@ export const Header = () => {
 			</div>
 			<div className="w-full  flex justify-center my-10">
 				<div className="flex px-4 lg:px-auto flex-col items-center">
-					<div className="mb-[10px] font-bold text-6xl">
+					<Link href={'/'} className="mb-[10px] font-bold text-6xl">
 						{/* <Image
 							width={350}
 							height={112}
@@ -32,7 +32,7 @@ export const Header = () => {
 							src="https://wanderlusttips.asia/wp-content/uploads/2020/12/cropped-LOGO-Wanderlust-tips-magazine.png"
 						/> */}
 						Travel with us
-					</div>
+					</Link>
 					<div className="uppercase text-center   text-[#818181] tracking-[1px]">
 						Tạp chí du lịch được yêu thích nhất Việt Nam
 					</div>
