@@ -7,7 +7,8 @@ const nextConfig = {
             'res.cloudinary.com',
             'imagedelivery.net',
             'customer-8p6222sl725afjta.cloudflarestream.com',
-            'cdn.tuoitre.vn'
+            'cdn.tuoitre.vn',
+            'www.vietnam.vn'
         ],
         remotePatterns: [
             {

@@ -24,7 +24,10 @@ export const Header = () => {
 			</div>
 			<div className="w-full  flex justify-center my-10">
 				<div className="flex px-4 lg:px-auto flex-col items-center">
-					<Link href={'/'} className="mb-[10px] font-bold text-6xl">
+					<Link
+						href={'/'}
+						className="mb-[10px] font-bold text-4xl lg:text-6xl"
+					>
 						{/* <Image
 							width={350}
 							height={112}
