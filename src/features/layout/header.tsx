@@ -12,7 +12,7 @@ export const Header = () => {
 						<div className="">LIÊN HỆ</div>
 						<div className="">Hello World</div>
 						<div className="">Best Hotels Resorts Awards</div>
-						<div className="">Wanderlust Tips USA</div>
+						<div className="">TRAVEL WITH US</div>
 					</div>
 					<div className="flex gap-4">
 						<ImFacebook2 color="#818181" />
@@ -26,7 +26,7 @@ export const Header = () => {
 				<div className="flex px-4 lg:px-auto flex-col items-center">
 					<Link
 						href={'/'}
-						className="mb-[10px] font-bold text-4xl lg:text-6xl"
+						className="mb-[10px] font-bold text-4xl lg:text-6xl uppercase"
 					>
 						{/* <Image
 							width={350}

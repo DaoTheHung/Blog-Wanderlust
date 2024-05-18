@@ -26,17 +26,19 @@ export default function RootLayout({
 					'font-gentium-plus m-0 p-0 box-border px-3 lg:px-0'
 				)}
 			>
-				<div className="mb-10 mx-auto ">
-					<Header />
-					<div className="border-b border-t py-3">
-						<div className="w-full flex justify-center mx-auto ">
-							<Navbar />
+				<div className="min-h-dvh relative">
+					<div className="mb-10 mx-auto ">
+						<Header />
+						<div className="border-b border-t py-3">
+							<div className="w-full flex justify-center mx-auto ">
+								<Navbar />
+							</div>
 						</div>
 					</div>
-				</div>
 
-				{children}
-				<Footer />
+					{children}
+					<Footer />
+				</div>
 			</body>
 		</html>
 	);

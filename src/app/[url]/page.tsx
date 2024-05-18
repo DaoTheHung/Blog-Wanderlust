@@ -1,16 +1,16 @@
 import { Post } from '@/components';
-import { initDataPost } from '@/features/home';
+// import { initDataPost } from '@/features/home';
 import { BannerLayout } from '@/features/layout';
+import { getPosts } from '@/lib/lib';
 import React from 'react';
 
-export default function Page({ params }: { params: { url: string } }) {
-	const filterData = initDataPost.filter(
-		(item) => item.blogId === params.url
-	);
+export default async function Page({ params }: { params: { url: string } }) {
+	const posts = await getPosts(params.url);
+
 	return (
 		<div>
 			<BannerLayout />
-			<Post data={filterData} />
+			<Post data={posts} />
 		</div>
 	);
 }
