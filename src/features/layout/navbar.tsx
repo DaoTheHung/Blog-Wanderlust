@@ -5,33 +5,34 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 import { RiArrowDropDownFill } from 'react-icons/ri';
+export const arr = [
+	{
+		id: 2,
+		name: 'Tin tức',
+		url: 'tin-tuc'
+	},
+	{
+		id: 3,
+		name: 'Điểm đến',
+		url: 'diem-den'
+	},
+	{
+		id: 4,
+		name: 'TIPS du lịch',
+		url: 'tips-du-lich'
+	},
+	{
+		id: 5,
+		name: 'ẩm thực',
+		url: 'am-thuc'
+	}
+];
 export const Navbar = () => {
 	const pathname = usePathname();
-	const arr = [
-		{
-			id: 2,
-			name: 'Tin tức',
-			url: 'tin-tuc'
-		},
-		{
-			id: 3,
-			name: 'Điểm đến',
-			url: 'diem-den'
-		},
-		{
-			id: 4,
-			name: 'TIPS du lịch',
-			url: 'tips-du-lich'
-		},
-		{
-			id: 5,
-			name: 'ẩm thực',
-			url: 'am-thuc'
-		}
-	];
+	
 
 	return (
-		<div className="flex uppercase justify-center flex-wrap gap-4">
+		<div className="hidden lg:flex uppercase justify-center flex-wrap gap-4">
 			{arr.map((item) => (
 				<div
 					key={item.id}

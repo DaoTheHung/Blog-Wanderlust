@@ -44,13 +44,17 @@ export const Post = ({ data }: TData) => {
 											item.title
 										)}`}
 									>
-										<Image
-											width={370}
-											height={230}
-											alt=""
-											className="!w-full !h-full"
-											src={item.image}
-										/>
+										{item.image ? (
+											<Image
+												width={370}
+												height={230}
+												alt=""
+												className="!w-full !h-full"
+												src={item.image}
+											/>
+										) : (
+											''
+										)}
 									</Link>
 								</div>
 								<div className="flex  flex-col items-center gap-3">
@@ -72,7 +76,7 @@ export const Post = ({ data }: TData) => {
 										{item.date}
 									</div>
 
-									<div className="text-[#444]">
+									<div className="text-[#444] line-clamp-3">
 										{item.description}
 									</div>
 								</div>

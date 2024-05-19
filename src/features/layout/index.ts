@@ -1,4 +1,5 @@
 export * from './footer'
 export * from './header'
 export * from './navbar'
+export * from './navbar-mobile'
 export * from './banner-layout'

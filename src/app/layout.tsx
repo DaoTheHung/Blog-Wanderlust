@@ -23,20 +23,19 @@ export default function RootLayout({
 			<body
 				className={cn(
 					inter.className,
-					'font-gentium-plus m-0 p-0 box-border px-3 lg:px-0'
+					'font-gentium-plus m-0 p-0 box-border '
 				)}
 			>
 				<div className="min-h-dvh relative">
 					<div className="mb-10 mx-auto ">
 						<Header />
-						<div className="border-b border-t py-3">
+						<div className="border-b hidden lg:block border-t py-3">
 							<div className="w-full flex justify-center mx-auto ">
 								<Navbar />
 							</div>
 						</div>
 					</div>
-
-					{children}
+					<div className="px-3 lg:px-0">{children}</div>
 					<Footer />
 				</div>
 			</body>
