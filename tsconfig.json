@@ -29,7 +29,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "features/working/api/working.tsx"
   ],
   "exclude": ["node_modules"]
 }
