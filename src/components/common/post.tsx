@@ -4,13 +4,10 @@ import Image from 'next/image';
 
 import Link from 'next/link';
 import { convertToSlug } from '@/features/untils';
-import {
-	Card,
-
-} from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Button } from '@/components';
 import { TinTuc } from '#side/content';
-
+import a from '../../public/images/tin-tuc/10.jpg';
 type TData = {
 	data: TinTuc[];
 };
@@ -31,31 +28,28 @@ export const Post = ({ data }: TData) => {
 							className="md:w-[310px] p-4 lg:w-[375px]  "
 						>
 							<div className="flex flex-col gap-7 items-center">
-								<div className="cursor-pointer md:h-[350px] lg:h-[236px] w-full">
-									<Link
-										href={`/${item.slug
-											}`}
-									>
-										{item.image ? (
-											<Image
-												width={370}
-												height={230}
-												alt=""
-												className="!w-full !h-full"
-												src={item.image}
-											/>
-										) : (
-											''
-										)}
+								<div
+									onClick={() =>
+										console.log(item.image)
+									}
+									className="cursor-pointer md:h-[350px] lg:h-[236px] w-full"
+								>
+									<Link href={`/${item.slug}`}>
+										<Image
+											width={370}
+											height={230}
+											alt=""
+											className="!w-full !h-full"
+											src={item.image}
+										/>
 									</Link>
 								</div>
 								<div className="flex  flex-col items-center gap-3">
 									<div className="text-[#c39f76] uppercase hover:text-[#444] cursor-pointer ">
-										{item.slug}
+										{item.id}
 									</div>
 									<Link
-										href={`/${item.slug
-											}`}
+										href={`/${item.slug}`}
 										className="font-bold text-[#444] uppercase cursor-pointer hover:text-[#c39f76]"
 									>
 										{item.title}

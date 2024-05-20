@@ -1,10 +1,11 @@
 import { Post } from '@/components';
 import { BannerLayout } from '@/features/layout';
-import { getPosts } from '@/lib/lib';
-import React from 'react';
 
-export default async function Tips() {
-  const posts = [] as any[]
+import React from 'react';
+import { tipTravelBlog } from '#side/content'
+
+export default  function Tips() {
+  const posts = tipTravelBlog
 
   return (
     <div>

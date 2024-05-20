@@ -12,3 +12,6 @@ export declare const newsBlog: TinTuc[]
 
 export type TipsDuLich = Collections['tipTravelBlog']['schema']['_output']
 export declare const tipTravelBlog: TipsDuLich[]
+
+export type EatBlog = Collections['eatBlog']['schema']['_output']
+export declare const eatBlog: EatBlog[]

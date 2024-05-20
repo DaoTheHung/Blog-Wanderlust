@@ -3,3 +3,4 @@
 export { default as travelBlog } from './travelBlog.json'
 export { default as newsBlog } from './newsBlog.json'
 export { default as tipTravelBlog } from './tipTravelBlog.json'
+export { default as eatBlog } from './eatBlog.json'

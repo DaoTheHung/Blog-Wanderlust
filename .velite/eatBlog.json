@@ -1,0 +1,13 @@
+[
+  {
+    "slug": "am-thuc/eat1",
+    "id": "chua co",
+    "title": "Khai mạc Lễ hội du lịch biển Hải Tiến 2024",
+    "description": "Tối 29/4, UBND huyện Hoằng Hóa đã long trọng tổ chức khai mạc Lễ hội du lịch biển Hải Tiến năm 2024, với chủ đề “Hải Tiến – Biển hát khúc tình ca”, sự kiện đã chính thức “mở màn” mùa du lịch năm 2024, nhằm tiếp tục giới thiệu, quảng bá tiềm năng, thế mạnh của du lịch Hải Tiến, qua đó thu hút du khách và các nhà đầu tư đến với Hải Tiến, Hoằng Hoá đồng thời khẳng định quyết tâm thúc đẩy du lịch biển Hải Tiến ngày càng phát triển, từng bước trở thành đô thị du lịch biển văn minh, hiện đại.",
+    "date": "10/05/2024",
+    "image": "chua co",
+    "author": "DKL",
+    "body": "const{jsx:n}=arguments[0];function _createMdxContent(t){const h={p:\"p\",...t.components};return n(h.p,{children:\"Sáng sớm 13/4, khi phố phường còn chưa tấp nập xe cộ, có một Đà Nẵng thật khác, rất nhẹ nhàng. Trong khi những ngày này ở nhiều địa phương nắng nóng đổ lửa, buổi sáng ở thành phố cuối sông, đầu biển thời tiết thật dễ chịu, nên thơ.\"})}return{default:function(t={}){const{wrapper:h}=t.components||{};return h?n(h,{...t,children:n(_createMdxContent,{...t})}):_createMdxContent(t)}};",
+    "slugAsParams": "eat1"
+  }
+]

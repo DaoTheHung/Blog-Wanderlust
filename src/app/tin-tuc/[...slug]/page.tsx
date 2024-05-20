@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import { H1Block, H2Block, ImageBlock, PBlock } from '@/components/post-block';
 import Markdown from 'markdown-to-jsx';
 import { newsBlog } from '#side/content';
 import { Mdx } from "@/components/mdx-components"
