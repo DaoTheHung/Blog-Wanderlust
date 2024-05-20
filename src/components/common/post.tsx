@@ -9,10 +9,10 @@ import {
 
 } from '@/components/ui/card';
 import { Button } from '@/components';
-import { TPost } from '@/types';
+import { TinTuc } from '#side/content';
 
 type TData = {
-	data: TPost[];
+	data: TinTuc[];
 };
 
 export const Post = ({ data }: TData) => {
@@ -34,7 +34,7 @@ export const Post = ({ data }: TData) => {
 								<div className="cursor-pointer md:h-[350px] lg:h-[236px] w-full">
 									<Link
 										href={`/${item.slug
-											}/${item.id}`}
+											}`}
 									>
 										{item.image ? (
 											<Image
@@ -55,7 +55,7 @@ export const Post = ({ data }: TData) => {
 									</div>
 									<Link
 										href={`/${item.slug
-											}/${item.id}`}
+											}`}
 										className="font-bold text-[#444] uppercase cursor-pointer hover:text-[#c39f76]"
 									>
 										{item.title}

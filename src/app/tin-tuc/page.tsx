@@ -1,10 +1,11 @@
 import { Post } from '@/components';
 import { BannerLayout } from '@/features/layout';
-import { getPosts } from '@/lib/lib';
-import React from 'react';
 
-export default async function News() {
-  const posts = await getPosts('tin-tuc');
+import React from 'react';
+import { newsBlog } from '#side/content'
+
+export default  function News() {
+  const posts = newsBlog
 
   return (
     <div>
