@@ -4,7 +4,7 @@ import { BannerLayout } from '@/features/layout';
 import React from 'react';
 import { newsBlog } from '#side/content'
 
-export default async function News() {
+export default  function News() {
   const posts = newsBlog
 
   return (
