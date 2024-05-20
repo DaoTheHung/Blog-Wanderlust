@@ -1,6 +1,7 @@
 [
   {
     "slug": "diem-den/travel1",
+    "id": "travel1",
     "title": "Đà Nẵng “thơ\" vào ngày sáng sớm",
     "description": "Đà Nẵng không chỉ lung linh sắc màu trên những cây cầu vào mỗi tối, mà dòng sông Hàn của thành phố này còn mang một vẻ đẹp yên ả vào sáng sớm.",
     "date": "09/04/2024",
@@ -11,6 +12,7 @@
   },
   {
     "slug": "diem-den/travel10",
+    "id": "travel10",
     "title": "Thành phố ngàn hoa “thay da đổi thịt”",
     "description": "",
     "date": "10/05/2024",
@@ -21,6 +23,7 @@
   },
   {
     "slug": "diem-den/travel2",
+    "id": "travel2",
     "title": "Chợ phiên đậm chất núi rừng Măng Đen hấp dẫn du khách",
     "description": "Dưới tán thông xanh, không gian chợ phiên Măng Đen đậm chất núi rừng níu chân hàng ngàn du khách tìm tới cao nguyên xứ lạnh mỗi ngày.",
     "date": "15/04/2024",
@@ -31,6 +34,7 @@
   },
   {
     "slug": "diem-den/travel3",
+    "id": "travel3",
     "title": "Mùa du lịch “cập bến\" Đà Nẵng",
     "description": "Mùa du lịch biển Đà Nẵng 2024 với chủ đề \"Sóng mùa hè\" đã chính thức diễn ra tại Công viên Biển Đông từ tối 27/4.",
     "date": "27/04/2024",
@@ -41,6 +45,7 @@
   },
   {
     "slug": "diem-den/travel4",
+    "id": "travel4",
     "title": "Khách sạn Hội An rực đỏ trong màu cờ Tổ quốc",
     "description": "Để giới thiệu cho du khách về ngày lễ trọng đại của Việt Nam, một khu lưu trú chuyên dòng khách quốc tế ở Hội An đã đồng loạt treo cờ ở tất cả các ban công trong dịp nghỉ lễ 30/4, 1/5.",
     "date": "29/04/2024",
@@ -51,6 +56,7 @@
   },
   {
     "slug": "diem-den/travel5",
+    "id": "travel5",
     "title": "Đại dương đẹp diệu kỳ ở Phú Quốc",
     "description": "Khu vực biển phía Nam đảo Phú Quốc (Kiên Giang) có nhiều hòn đảo hoang sơ, xinh đẹp như hòn Mây Rút Trong, Mây Rút Ngoài, hòn Thơm, hòn Xưởng, hòn Gầm Ghì…",
     "date": "01/05/2024",
@@ -61,6 +67,7 @@
   },
   {
     "slug": "diem-den/travel6",
+    "id": "travel6",
     "title": "Cảng tàu du lịch Hạ Long đồng loạt tăng giá dịch vụ",
     "description": "Hai cảng tàu khách du lịch tại Hạ Long (Quảng Ninh) vừa đồng loạt thông báo tăng giá dịch vụ từ ngày 1/6.",
     "date": "07/05/2024",
@@ -71,6 +78,7 @@
   },
   {
     "slug": "diem-den/travel7",
+    "id": "travel7",
     "title": "Du lịch lịch sử 'bùng nổ' ở Điện Biên Phủ",
     "description": "Kỷ niệm 70 năm Chiến thắng Điện Biên Phủ (7/5/1954 - 7/5/2024), hàng loạt người dân đổ về Điện Biên Phủ để ăn mừng kỷ niệm cùng nghỉ dưỡng.",
     "date": "07/05/2024",
@@ -81,6 +89,7 @@
   },
   {
     "slug": "diem-den/travel8",
+    "id": "travel9",
     "title": "Vườn quốc gia Cúc Phương mở tour đêm",
     "description": "",
     "date": "09/05/2024",
@@ -91,6 +100,7 @@
   },
   {
     "slug": "diem-den/travel9",
+    "id": "travel8",
     "title": "Thái Lan thúc đẩy du lịch tránh nóng",
     "description": "",
     "date": "08/05/2024",

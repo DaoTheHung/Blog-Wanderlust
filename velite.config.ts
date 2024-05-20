@@ -16,6 +16,7 @@ const travelBlog = defineCollection({
   schema: s
     .object({
       slug: s.path(),
+      id: s.string(),
       title: s.string().max(99),
       description: s.string().max(999).optional(),
       date: s.string(),
@@ -32,6 +33,7 @@ const newsBlog = defineCollection({
   schema: s
     .object({
       slug: s.path(),
+      id: s.string(),
       title: s.string().max(99),
       description: s.string().max(999).optional(),
       date: s.string(),
@@ -48,6 +50,7 @@ const tipTravelBlog = defineCollection({
   schema: s
     .object({
       slug: s.path(),
+      id: s.string(),
       title: s.string().max(99),
       description: s.string().max(999).optional(),
       date: s.string(),

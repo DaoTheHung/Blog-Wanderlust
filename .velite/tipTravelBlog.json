@@ -1,6 +1,7 @@
 [
   {
     "slug": "tips-du-lich/tips1",
+    "id": "tips1",
     "title": "Khắc cốt ghi tâm 5 tips sau khi đi du lịch theo nhóm",
     "description": "Đi du lịch theo nhóm từ xưa đến nay luôn là vấn đề khiến nguyên team vò đầu bứt tai, bởi điều quan trọng nhất là không được để tình bạn sứt mẻ. Vậy phải làm sao để điều đó không bao giờ xảy ra?",
     "date": "09/04/2024",
@@ -11,6 +12,7 @@
   },
   {
     "slug": "tips-du-lich/tips2",
+    "id": "tips2",
     "title": "Bỏ túi kinh nghiệm đi du lịch Côn Đảo \"tự túc\"",
     "description": "Trước khi bắt đầu cuộc hành trình khám phá Côn Đảo, đừng quên thu thập những kinh nghiệm quý báu để đảm bảo chuyến đi được hoàn hảo nhé.",
     "date": "11/04/2024",
@@ -20,7 +22,19 @@
     "slugAsParams": "tips2"
   },
   {
+    "slug": "tips-du-lich/tips3",
+    "id": "tips3",
+    "title": "Những lưu ý về trang phục khi đi du lịch",
+    "description": "a",
+    "date": "12/04/2024",
+    "image": "https://comly.vn/wp-content/uploads/2021/10/thuong-hieu-trang-suc.jpeg",
+    "author": "Nguyễn Khánh Linh",
+    "body": "const{Fragment:n,jsx:h,jsxs:c}=arguments[0];function _createMdxContent(i){const t={em:\"em\",img:\"img\",p:\"p\",strong:\"strong\",...i.components};return c(n,{children:[h(t.p,{children:h(t.em,{children:h(t.strong,{children:\"Những lưu ý về trang phục dưới đây sẽ giúp bạn tận hưởng chuyến đi đi một cách thoải mái mà không gặp bất kỳ vấn đề nào.\"})})}),\"\\n\",h(t.p,{children:\"Trong chuyến du lịch, bạn có thể chọn những trang phục thoải mái và tiện lợi để di chuyển, hay những bộ cánh thời trang để check in . Tuy nhiên đừng quên một số lưu ý về trang phục để tránh những phiền toái không đáng có\"}),\"\\n\",h(t.p,{children:h(t.strong,{children:\"Trang phục xuề xoà\"})}),\"\\n\",h(t.p,{children:\"Việc tránh ăn mặc quá hở hang khi du lịch đến các quốc gia có bản sắc tôn giáo mạnh mẽ là điều vô cùng cần thiết. Phụ nữ nên tránh váy ngắn, áo ba lỗ, và áo sơ mi cổ áo ngắn khi thăm các địa điểm linh thiêng. Đối với nam giới, họ không nên mặc quần đùi và áo cộc tay khi đi vào nhà thờ hoặc những nơi linh thiêng khác.\"}),\"\\n\",h(t.p,{children:h(t.strong,{children:\"Trang sức đắt tiền\"})}),\"\\n\",h(t.p,{children:\"Việc đeo quá nhiều trang sức đắt tiền sẽ vô tình khiến bạn trở thành mục tiêu của những kẻ xấu khi đi du lịch. Nếu bạn muốn thêm chút phần tô điểm, hãy chọn một hoặc hai món trang sức vừa phải, chỉ cần phù\"}),\"\\n\",c(t.p,{children:[h(t.img,{src:\"https://comly.vn/wp-content/uploads/2021/10/thuong-hieu-trang-suc.jpeg\",alt:\"\"}),\"\\r\\nhợp với trang phục là đủ.\"]}),\"\\n\",h(t.p,{children:\"Không nên mang trang sức quá đắt tiền khi đi du lịch.\"}),\"\\n\",h(t.p,{children:h(t.strong,{children:\"Giày cao gót\"})}),\"\\n\",h(t.p,{children:\"Việc đi du lịch thường đồng nghĩa với việc bạn sẽ phải thường xuyên di chuyển đến nhiều nơi để khám phá cảnh đẹp. Vì thế, những đôi giày đế bằng êm ái hoặc sandal đế bệt sẽ là lựa chọn hàng đầu thay vì những đôi giày cao gót.\"}),\"\\n\",h(t.p,{children:h(t.strong,{children:\"Quần jeans\"})}),\"\\n\",h(t.p,{children:\"Quần jeans thường được coi là sự lựa chọn an toàn cho chuyến du lịch, nhưng không phải lúc nào cũng vậy. Chất vải jeans không thoáng khí và khá chậm khô, không phù hợp khi bạn đi đến những nơi có khí hậu ấm áp hoặc mưa nhiều. Ngoài ra, quần jeans bó sát cũng có thể gây ra cảm giác không thoải mái khi bạn phải di chuyển nhiều. Đồng thời, quần jeans rách hoặc quá rộng có thể tạo ra sự không lịch sự nếu bạn mặc chúng khi đến những khu vực trang nghiêm.\"}),\"\\n\",h(t.p,{children:h(t.img,{src:\"https://www.vfestival.vn/wp-content/uploads/2019/06/trang-phuc-di-du-lich-cho-phai-dep-xinh-khoi-ban-2.jpg\",alt:\"\"})}),\"\\n\",h(t.p,{children:h(t.strong,{children:\"Trang phục màu sắc lòe loẹt\"})}),\"\\n\",h(t.p,{children:\"Hãy ưu tiên những màu sắc trung tính khi đi du lịch. Những màu như xám, nâu, và màu xanh navy thường dễ dàng hòa trộn vào môi trường xung quanh và không gây ra cảm giác khó chịu. Màu đen và trắng có thể mang lại phong cách và sự hiện đại, nhưng ở một số quốc gia hoặc điểm đến. Cụ thể, chúng có thể mang lại cảm giác u ám hoặc không may mắn.\"}),\"\\n\",h(t.p,{children:h(t.strong,{children:\"Chất liệu không phù hợp\"})}),\"\\n\",h(t.p,{children:\"Bạn nên tránh những chất liệu như lụa, nylon, da, cao su, hoặc vải tổng hợp vì chúng thường dễ nhăn và ít thấm hút mồ hôi. Thay vào đó, lựa chọn quần áo thể thao làm từ vải co giãn, cotton, hoặc các loại vải dệt kim có khả năng thấm hút mồ hôi tốt và thoáng khí. Những loại trang phục ít nhăn cũng là lựa chọn tốt cho các chuyến đi du lịch. Đồng thời, hãy kiểm tra dự báo thời tiết của địa điểm đến để chọn trang phục phù hợp.\"})]})}return{default:function(n={}){const{wrapper:c}=n.components||{};return c?h(c,{...n,children:h(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "tips3"
+  },
+  {
     "slug": "tips-du-lich/tips4",
+    "id": "tips4",
     "title": "Kinh nghiệm du lịch nước ngoài khi không giỏi Tiếng Anh",
     "description": "Chắc hẳn ai cũng có suy nghĩ rằng phải giỏi Tiếng Anh thì mới có thể đi du lịch nước ngoài. Thực tế, bạn hoàn toàn có thể khám phá thế giới mà không cần biết Tiếng Anh thông qua việc áp dụng 7 chiến lược dưới đây.",
     "date": "15/04/2024",
@@ -31,6 +45,7 @@
   },
   {
     "slug": "tips-du-lich/tips5",
+    "id": "tips4",
     "title": "Lời khuyên bổ ích cho phụ nữ đi du lịch một mình",
     "description": "Đi du lịch một mình đối với phụ nữ là một trải nghiệm thú vị nhưng cũng đầy mạo hiểm. Tuy nhiên, nếu bạn trang bị những kỹ năng dưới đây thì cuộc hành trình sẽ vô cùng suôn sẻ.",
     "date": "15/04/2024",
