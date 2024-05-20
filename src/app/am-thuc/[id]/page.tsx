@@ -12,14 +12,14 @@ type Tdata = {
 		id: string
 	}
 }
-export default function Page({ params }: Tdata) {
+export default async function Page({ params }: Tdata) {
 
 	const slug = params.id
-	const post = getPostContent(slug)
+	const post = await getPostContent(slug)
+	console.log(post)
 	return (
 		<div className="px-3 lg:px-0 w-full md:w-[750px] mx-auto  lg:w-[794px]">
 			<div className="flex justify-center items-center flex-col">
-				{slug}
 				{/* <div className="flex justify-center items-center flex-col gap-4 w-full">
 					<div className="text-xl lg:text-4xl font-bold">
 						{post.data.title}
@@ -53,16 +53,12 @@ export default function Page({ params }: Tdata) {
 
 
 function getPostContent(slug: string) {
-	try {
-		const folder = 'posts/am-thuc/';
-		const file = folder + `${slug}.mdx`;
-		const content = fs.readFileSync(file, 'utf8');
-		const matterResult = matter(content);
-		return matterResult;
-	} catch (error) {
-		console.error(error);
-		throw error; // Ném lại lỗi để được xử lý bởi mã gọi
-	}
+	const folder = 'posts/am-thuc/'
+	const file = folder + `${slug}.mdx`
+	const content = fs.readFileSync(file, 'utf8')
+
+	const matterResult = matter(content)
+	return matterResult
 }
 
 
