@@ -1,15 +1,15 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { getPost } from '@/lib/lib';
 import { H1Block, H2Block, ImageBlock, PBlock } from '@/components/post-block';
 import Markdown from 'markdown-to-jsx';
 
 export default async function Page({
-	params
+	params: { id },
 }: {
 	params: { id: string; url: string };
 }) {
-	const post = await getPost(params.id, 'am-thuc');
-	if (!post) return notFound();
+	const post = await getPost(id, 'am-thuc');
+	if (!post) return redirect(`/am-thuc`);
 	return (
 		<div className="px-3 lg:px-0 w-full md:w-[750px] mx-auto  lg:w-[794px]">
 			<div className="flex justify-center items-center flex-col">
