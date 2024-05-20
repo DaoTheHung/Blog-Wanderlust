@@ -16,11 +16,11 @@ export default function Page({ params }: Tdata) {
 
 	const slug = params.id
 	const post = getPostContent(slug)
-
+	console.log(post)
 	return (
 		<div className="px-3 lg:px-0 w-full md:w-[750px] mx-auto  lg:w-[794px]">
 			<div className="flex justify-center items-center flex-col">
-				<div className="flex justify-center items-center flex-col gap-4 w-full">
+				{/* <div className="flex justify-center items-center flex-col gap-4 w-full">
 					<div className="text-xl lg:text-4xl font-bold">
 						{post.data.title}
 					</div>
@@ -45,7 +45,7 @@ export default function Page({ params }: Tdata) {
 					<div className="w-full text-end font-bold  lg:text-xl">
 						{post.data.author}
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
