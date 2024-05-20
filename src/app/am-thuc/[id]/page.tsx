@@ -4,25 +4,28 @@ import { H1Block, H2Block, ImageBlock, PBlock } from '@/components/post-block';
 import Markdown from 'markdown-to-jsx';
 import { TPost } from '@/types';
 
+import fs from 'fs'
+import matter from "gray-matter"
+
 type Tdata = {
 	params: {
 		id: string
 	}
 }
-export default async function Page({ params }: Tdata) {
+export default function Page({ params }: Tdata) {
 
-	// const post = await getPost(params.id, 'am-thuc')
-	// if (!post) return redirect(`/am-thuc`);
+	const slug = params.id
+	const post = getPostContent(slug)
+
 	return (
 		<div className="px-3 lg:px-0 w-full md:w-[750px] mx-auto  lg:w-[794px]">
 			<div className="flex justify-center items-center flex-col">
-				{params.id}
-				{/* <div className="flex justify-center items-center flex-col gap-4 w-full">
+				<div className="flex justify-center items-center flex-col gap-4 w-full">
 					<div className="text-xl lg:text-4xl font-bold">
-						{post.title}
+						{post.data.title}
 					</div>
 					<div className="text-xl font-bold">
-						{post.description}
+						{post.data.description}
 					</div>
 					<div className="">
 						<Markdown
@@ -35,31 +38,35 @@ export default async function Page({ params }: Tdata) {
 								}
 							}}
 						>
-							{post.body}
+							{post.content}
 						</Markdown>
 					</div>
 
 					<div className="w-full text-end font-bold  lg:text-xl">
-						{post.author}
+						{post.data.author}
 					</div>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);
 }
 
 
+function getPostContent(slug: string) {
+	const folder = 'posts/am-thuc/'
+	const file = folder + `${slug}.mdx`
+	const content = fs.readFileSync(file, 'utf8')
 
-// // or Dynamic metadata
-// export async function generateStaticParams() {
-// 	const posts = await getPosts('am-thuc');
+	const matterResult = matter(content)
+	return matterResult
+}
 
-// 	return posts.map((post) => ({ slug: post.title }))
 
-// }
+
+
 export async function generateStaticParams() {
 	const posts = await getPosts('am-thuc');
 	return posts.map((post) => ({
-		slug: post.title,
+		slug: post.id,
 	}))
 }

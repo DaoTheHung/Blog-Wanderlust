@@ -34,9 +34,7 @@ export const Post = ({ data }: TData) => {
 								<div className="cursor-pointer md:h-[350px] lg:h-[236px] w-full">
 									<Link
 										href={`/${item.slug
-											}/${convertToSlug(
-												item.title
-											)}`}
+											}/${item.id}`}
 									>
 										{item.image ? (
 											<Image
@@ -57,9 +55,7 @@ export const Post = ({ data }: TData) => {
 									</div>
 									<Link
 										href={`/${item.slug
-											}/${convertToSlug(
-												item.title
-											)}`}
+											}/${item.id}`}
 										className="font-bold text-[#444] uppercase cursor-pointer hover:text-[#c39f76]"
 									>
 										{item.title}
