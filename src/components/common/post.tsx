@@ -1,17 +1,12 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Tpost } from '@/features/types';
-import { usePathname } from 'next/navigation';
+
 import Link from 'next/link';
 import { convertToSlug } from '@/features/untils';
 import {
 	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle
+
 } from '@/components/ui/card';
 import { Button } from '@/components';
 import { TPost } from '@/types';
@@ -38,11 +33,10 @@ export const Post = ({ data }: TData) => {
 							<div className="flex flex-col gap-7 items-center">
 								<div className="cursor-pointer md:h-[350px] lg:h-[236px] w-full">
 									<Link
-										href={`/${
-											item.slug
-										}/${convertToSlug(
-											item.title
-										)}`}
+										href={`/${item.slug
+											}/${convertToSlug(
+												item.title
+											)}`}
 									>
 										{item.image ? (
 											<Image
@@ -62,11 +56,10 @@ export const Post = ({ data }: TData) => {
 										{item.slug}
 									</div>
 									<Link
-										href={`/${
-											item.slug
-										}/${convertToSlug(
-											item.title
-										)}`}
+										href={`/${item.slug
+											}/${convertToSlug(
+												item.title
+											)}`}
 										className="font-bold text-[#444] uppercase cursor-pointer hover:text-[#c39f76]"
 									>
 										{item.title}
