@@ -14,10 +14,10 @@ export const Footer = () => {
 			<div className=" bg-[#eef1f3]">
 				<div className="py-[60px] px-4 lg:px-auto lg:w-[70%] xl:w-[1200px] w-full flex justify-center mx-auto ">
 					<div className="flex gap-16 flex-wrap lg:flex-nowrap">
-						<div className="flex flex-col gap-5 justify-center h-full">
+						<div className="flex flex-col gap-5 justify-center lg:h-full">
 							<Link
 								href={'/'}
-								className="mb-[10px] font-bold text-4xl lg:text-6xl uppercase"
+								className="mb-[10px] w-[279px] font-bold text-2xl lg:text-6xl uppercase"
 							>
 								{/* <Image
 							width={350}
@@ -29,11 +29,11 @@ export const Footer = () => {
 							</Link>
 						</div>
 						<div className=" flex flex-wrap lg:flex-nowrap gap-4">
-							<div className="flex flex-col  gap-5 ">
+							<div className="flex flex-col  gap-5 w-full">
 								<div className="font-bold uppercase">
 									Điểm đến
 								</div>
-								<div className="flex flex-col gap-1">
+								<div className="flex flex-col gap-1 w-full">
 									{travelBlog
 										.slice(3, 6)
 										.map((item) => (
@@ -56,8 +56,8 @@ export const Footer = () => {
 														}
 													/>
 												</div>
-												<div className="flex flex-col gap-1 w-[100px]">
-													<div className="font-bold text-[#444] line-clamp-2">
+												<div className="flex flex-col gap-1 w-[46dvw] lg:w-[100px]">
+													<div className="font-bold text-[#444] lg:line-clamp-2">
 														{
 															item.title
 														}
@@ -74,9 +74,9 @@ export const Footer = () => {
 								</div>
 							</div>
 
-							<div className="flex flex-col  gap-5 ">
+							<div className="flex flex-col  gap-5 w-full">
 								<div className="font-bold">TIN TỨC</div>
-								<div className="flex flex-col gap-1">
+								<div className="flex flex-col gap-1 w-full">
 									{newsBlog
 										.slice(0, 3)
 										.map((item) => (
@@ -99,7 +99,7 @@ export const Footer = () => {
 														}
 													/>
 												</div>
-												<div className="flex flex-col gap-1 w-[100px]">
+												<div className="flex flex-col gap-1 w-[46dvw] lg:w-[100px]">
 													<div className="font-bold text-[#444] line-clamp-2">
 														{
 															item.title

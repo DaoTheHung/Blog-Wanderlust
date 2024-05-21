@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { Header, Navbar, Footer } from '@/features/layout';
+import { BackToTop } from '@/components/common/back-to-top';
 
 export const metadata: Metadata = {
 	title: 'Travel with us - Tạp chí du lịch được yêu thích nhất Việt Nam',
@@ -37,6 +38,9 @@ export default function RootLayout({
 					</div>
 					<div className="px-3 lg:px-0">{children}</div>
 					<Footer />
+				</div>
+				<div className="fixed z-[999] bottom-4 right-4">
+					<BackToTop />
 				</div>
 			</body>
 		</html>

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import * as runtime from 'react/jsx-runtime';
 
 import { cn } from '@/lib/utils';
+import { Callout } from './callout';
 
 const useMDXComponent = (code: string) => {
 	const fn = new Function(code);
@@ -30,10 +31,11 @@ const components = {
 	),
 
 	h3: ({ className, ...props }: { className: string }) => (
-		<h3 className={cn(
-			'text-darkBlue mt-2 font-medium text-sm  ',
-			className
-		)}
+		<h3
+			className={cn(
+				'text-darkBlue mt-2 font-medium text-sm  ',
+				className
+			)}
 			{...props}
 		/>
 	),
@@ -78,7 +80,8 @@ const components = {
 		/>
 	),
 
-	Image
+	Image,
+	Callout
 };
 
 interface MdxProps {

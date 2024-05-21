@@ -33,8 +33,26 @@ export default {
 			'ik.imagekit.io',
 			'cdn.vntrip.vn',
 			'statics.vinwonders.com',
+			'suckhoedoisong.qltns.mediacdn.vn',
+			'luhanhvietnam.com.vn',
+			'datviettour.com.vn',
+			'vpdt.vietrantour.com.vn',
+			'kenh14cdn.com',
+			'cdn.tgdd.vn'
 		],
 		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'cdn.tgdd.vn',
+			},
+			{
+				protocol: 'https',
+				hostname: 'kenh14cdn.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'vpdt.vietrantour.com.vn',
+			},
 			{
 				protocol: 'https',
 				hostname: 'wanderlusttips.asia',
@@ -102,6 +120,18 @@ export default {
 			{
 				protocol: 'https',
 				hostname: 'i1-giadinh.vnecdn.net',
+			},
+			{
+				protocol: 'https',
+				hostname: 'suckhoedoisong.qltns.mediacdn.vn',
+			},
+			{
+				protocol: 'https',
+				hostname: 'luhanhvietnam.com.vn',
+			},
+			{
+				protocol: 'https',
+				hostname: 'datviettour.com.vn',
 			},
 		],
 	},
