@@ -32,8 +32,7 @@ export default {
 			'stcv4.hnammobile.com',
 			'ik.imagekit.io',
 			'cdn.vntrip.vn',
-			'statics.vinwonders.com'
-
+			'statics.vinwonders.com',
 		],
 		remotePatterns: [
 			{
@@ -96,15 +95,23 @@ export default {
 				protocol: 'https',
 				hostname: 'statics.vinwonders.com',
 			},
+			{
+				protocol: 'https',
+				hostname: 'cdn-i.vtcnews.vn',
+			},
+			{
+				protocol: 'https',
+				hostname: 'i1-giadinh.vnecdn.net',
+			},
 		],
 	},
 
 	// othor next config here...
-	webpack: config => {
-		config.plugins.push(new VeliteWebpackPlugin())
-		return config
-	}
-}
+	webpack: (config) => {
+		config.plugins.push(new VeliteWebpackPlugin());
+		return config;
+	},
+};
 
 class VeliteWebpackPlugin {
 	static started = false

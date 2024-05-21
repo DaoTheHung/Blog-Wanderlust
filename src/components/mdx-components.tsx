@@ -29,17 +29,26 @@ const components = {
 		/>
 	),
 
+	h3: ({ className, ...props }: { className: string }) => (
+		<h3 className={cn(
+			'text-darkBlue mt-2 font-medium text-sm  ',
+			className
+		)}
+			{...props}
+		/>
+	),
+
 	p: ({ className, ...props }: { className: string }) => (
 		<p
 			className={cn(
-				'text-sm lg:text-xl  [&:not(:first-child)]:mt-2',
+				'text-sm lg:text-xl my-2 [&:not(:first-child)]:mt-2',
 				className
 			)}
 			{...props}
 		/>
 	),
 	ul: ({ className, ...props }: { className: string }) => (
-		<ul className={cn('mt-3 list-disc', className)} {...props} />
+		<ul className={cn('mt-3 list-disc ml-6', className)} {...props} />
 	),
 	ol: ({ className, ...props }: { className: string }) => (
 		<ol className={cn('my-6 ml-6 list-decimal', className)} {...props} />
