@@ -40,6 +40,16 @@ const components = {
 		/>
 	),
 
+	h4: ({ className, ...props }: { className: string }) => (
+		<h4
+			className={cn(
+				'text-darkBlue mt-2 font-medium text-[16px]  text-center',
+				className
+			)}
+			{...props}
+		/>
+	),
+
 	p: ({ className, ...props }: { className: string }) => (
 		<p
 			className={cn(
@@ -74,7 +84,7 @@ const components = {
 	}: React.ImgHTMLAttributes<HTMLImageElement>) => (
 		// eslint-disable-next-line @next/next/no-img-element
 		<img
-			className={cn('rounded-md border ', className)}
+			className={cn('rounded-md border w-full', className)}
 			alt={alt}
 			{...props}
 		/>

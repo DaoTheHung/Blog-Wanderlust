@@ -38,7 +38,8 @@ export default {
 			'datviettour.com.vn',
 			'vpdt.vietrantour.com.vn',
 			'kenh14cdn.com',
-			'cdn.tgdd.vn'
+			'cdn.tgdd.vn',
+			'cdn.tuoitrethudo.vn',
 		],
 		remotePatterns: [
 			{
@@ -132,6 +133,10 @@ export default {
 			{
 				protocol: 'https',
 				hostname: 'datviettour.com.vn',
+			},
+			{
+				protocol: 'https',
+				hostname: 'cdn.tuoitrethudo.vn',
 			},
 		],
 	},
