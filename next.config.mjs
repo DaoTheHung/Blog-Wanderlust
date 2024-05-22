@@ -40,11 +40,21 @@ export default {
 			'kenh14cdn.com',
 			'cdn.tgdd.vn',
 			'cdn.tuoitrethudo.vn',
+			'geos-nature.org',
+			'photo-cms-baophapluat.epicdn.me'
 		],
 		remotePatterns: [
 			{
 				protocol: 'https',
 				hostname: 'cdn.tgdd.vn',
+			},
+			{
+				protocol: 'https',
+				hostname: 'photo-cms-baophapluat.epicdn.me',
+			},
+			{
+				protocol: 'https',
+				hostname: 'geos-nature.org',
 			},
 			{
 				protocol: 'https',

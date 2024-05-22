@@ -28,12 +28,12 @@ export default function RootLayout({
 				)}
 			>
 				<div className="min-h-dvh relative">
-					<div className="mb-10 mx-auto ">
+					<div className=" mx-auto ">
 						<Header />
-						<div className="border-b hidden lg:block border-t py-3">
-							<div className="w-full flex justify-center mx-auto ">
-								<Navbar />
-							</div>
+					</div>
+					<div className="border-b my-10 bg-white hidden lg:block border-t py-3 sticky top-0">
+						<div className="w-full flex justify-center mx-auto ">
+							<Navbar />
 						</div>
 					</div>
 					<div className="px-3 lg:px-0">{children}</div>

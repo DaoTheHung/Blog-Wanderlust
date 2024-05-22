@@ -1,23 +1,23 @@
 import { notFound } from 'next/navigation';
 import Markdown from 'markdown-to-jsx';
-import {  travelBlog } from '#side/content';
-import { Mdx } from "@/components/mdx-components"
+import { travelBlog } from '#side/content';
+import { Mdx } from '@/components/mdx-components';
 interface PageProps {
 	params: {
-		slug: string[]
-	}
+		slug: string[];
+	};
 }
 export default async function Page({ params }: PageProps) {
-	const post = await getPageFromParams(params)
+	const post = await getPageFromParams(params);
 
 	if (!post) {
-		notFound()
+		notFound();
 	}
 	return (
 		<div className="px-3 lg:px-0 w-full md:w-[750px] mx-auto  lg:w-[794px]">
 			<div className="flex justify-center items-center flex-col">
 				<div className="flex justify-center items-center flex-col gap-4 w-full">
-					<div className="text-xl lg:text-4xl font-bold">
+					<div className="text-xl lg:text-4xl font-bold text-start w-full">
 						{post.title}
 					</div>
 					<div className="text-xl font-bold">
@@ -36,23 +36,20 @@ export default async function Page({ params }: PageProps) {
 	);
 }
 
-
-
 async function getPageFromParams(params: any) {
-	const slug = params?.slug?.join("/")
-	const page = travelBlog.find((page) => page.slugAsParams === slug)
+	const slug = params?.slug?.join('/');
+	const page = travelBlog.find((page) => page.slugAsParams === slug);
 
 	if (!page) {
-		null
+		null;
 	}
 
-	return page
+	return page;
 }
 
-
-export async function generateStaticParams(): Promise<PageProps["params"][]> {
+export async function generateStaticParams(): Promise<PageProps['params'][]> {
 	const slug = travelBlog.map((page) => ({
-		slug: page.slugAsParams.split("/"),
-	}))
-	return slug
+		slug: page.slugAsParams.split('/')
+	}));
+	return slug;
 }
