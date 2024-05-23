@@ -31,7 +31,7 @@ export default function RootLayout({
 					<div className=" mx-auto ">
 						<Header />
 					</div>
-					<div className="border-b my-10 bg-white hidden lg:block border-t py-3 sticky top-0">
+					<div className="border-b my-10 bg-white hidden lg:block border-t py-3 sticky top-0 z-[9999]">
 						<div className="w-full flex justify-center mx-auto ">
 							<Navbar />
 						</div>

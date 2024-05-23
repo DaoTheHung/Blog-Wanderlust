@@ -14,7 +14,7 @@ const components = {
 	h1: ({ className, ...props }: { className: string }) => (
 		<h1
 			className={cn(
-				'text-darkBlue mt-2  font-semibold text-2xl lg:text-[32px] ',
+				'text-darkBlue my-2  font-semibold text-2xl lg:text-[32px] ',
 				className
 			)}
 			{...props}

@@ -41,12 +41,27 @@ export default {
 			'cdn.tgdd.vn',
 			'cdn.tuoitrethudo.vn',
 			'geos-nature.org',
-			'photo-cms-baophapluat.epicdn.me'
+			'photo-cms-baophapluat.epicdn.me',
+			'toptentravel.com.vn',
+			'mia.vn',
+			'cafebiz.cafebizcdn.vn'
 		],
 		remotePatterns: [
 			{
 				protocol: 'https',
+				hostname: 'cafebiz.cafebizcdn.vn',
+			},
+			{
+				protocol: 'https',
+				hostname: 'mia.vn',
+			},
+			{
+				protocol: 'https',
 				hostname: 'cdn.tgdd.vn',
+			},
+			{
+				protocol: 'https',
+				hostname: 'toptentravel.com.vn',
 			},
 			{
 				protocol: 'https',

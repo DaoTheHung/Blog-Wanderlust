@@ -15,7 +15,7 @@ const travelBlog = defineCollection({
 		.object({
 			slug: s.path(),
 			id: s.string(),
-			title: s.string().max(99),
+			title: s.string().max(999),
 			description: s.string().max(999).optional(),
 			date: s.string(),
 			image: s.string(),
@@ -32,7 +32,7 @@ const newsBlog = defineCollection({
 		.object({
 			slug: s.path(),
 			id: s.string(),
-			title: s.string().max(99),
+			title: s.string().max(999),
 			description: s.string().max(999).optional(),
 			date: s.string(),
 			image: s.string(),
@@ -49,7 +49,7 @@ const tipTravelBlog = defineCollection({
 		.object({
 			slug: s.path(),
 			id: s.string(),
-			title: s.string().max(99),
+			title: s.string().max(999),
 			description: s.string().max(999).optional(),
 			date: s.string(),
 			image: s.string(),
@@ -66,7 +66,7 @@ const eatBlog = defineCollection({
 		.object({
 			slug: s.path(),
 			id: s.string(),
-			title: s.string().max(99),
+			title: s.string().max(999),
 			description: s.string().max(999).optional(),
 			date: s.string(),
 			image: s.string(),

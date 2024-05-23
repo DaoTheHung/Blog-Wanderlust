@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ImFacebook2, ImInstagram } from 'react-icons/im';
 import { FaYoutube } from 'react-icons/fa6';
 import { IoLogoTiktok } from 'react-icons/io5';
@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 import {
 	Sheet,
+	SheetClose,
 	SheetContent,
 	SheetDescription,
 	SheetHeader,
@@ -14,7 +15,17 @@ import {
 	SheetTrigger
 } from '@/components/ui';
 import { NavbarMobile } from '@/features/layout';
+import { X } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 export const Header = () => {
+	const pathname = usePathname();
+	const [open, setOpen] = useState(false);
+
+	useEffect(() => {
+		if (pathname) {
+			setOpen(false);
+		}
+	}, [pathname]);
 	return (
 		<div className="w-full ">
 			<div className="w-full border border-b ">
@@ -26,8 +37,11 @@ export const Header = () => {
 						<div className="">TRAVEL WITH US</div>
 					</div>
 					<div className="lg:hidden">
-						<Sheet>
-							<SheetTrigger>
+						<Sheet
+							// onOpenChange={setOpen}
+							open={open}
+						>
+							<SheetTrigger onClick={() => setOpen(true)}>
 								<svg
 									width="20"
 									height="20"
@@ -43,9 +57,15 @@ export const Header = () => {
 									></path>
 								</svg>
 							</SheetTrigger>
-							<SheetContent>
+							<SheetContent side={'left'}>
 								<SheetHeader>
 									<NavbarMobile />
+									<SheetClose
+										className="absolute right-[11px] top-[4px]"
+										onClick={() => setOpen(false)}
+									>
+										<X className="h-4 w-4" />
+									</SheetClose>
 								</SheetHeader>
 							</SheetContent>
 						</Sheet>
