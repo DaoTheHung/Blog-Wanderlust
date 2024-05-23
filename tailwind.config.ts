@@ -87,6 +87,8 @@ const config = {
 			},
 			backgroundImage: {
 				footer1: "url('https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/438216153_913541494115090_9041177873738157076_n.png?stp=dst-png_p130x130&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFXdIrJfIeygJpPSitz--DXIpaqa8ggHUoilqpryCAdSip8qLgwvMCLBTan9u38H10QaAcpsmZPD0b6ySPnwPWh&_nc_ohc=DmLjKBVqpTgQ7kNvgGaI3fd&_nc_oc=Adj129bpodx6UqUAAGg0zRd4ImysWKS5xYsViyHJv5a8Ot7BZXSQVhVQeq7DszpXxL9b0gYP_BeFfuEfANg1aySo&_nc_ht=scontent.fhan17-1.fna&oh=00_AfD20ZlEENIvsXczjEYqeGWaAYk3yeOAGeLhtfZgs061NA&oe=663B75B2')",
+				bannerDefault:
+					"url('https://static.wixstatic.com/media/5bfb6f_26f1a5c736e544e09c63c82a4c792645~mv2_d_3839_1306_s_2.jpg/v1/fill/w_1469,h_475,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/5bfb6f_26f1a5c736e544e09c63c82a4c792645~mv2_d_3839_1306_s_2.jpg')",
 				banner: "url('/images/banner/diem-den.png')",
 				banne1: "url('/images/banner/tin-tuc.png')",
 				banne2: "url('/images/banner/tips-du-lich.png')",
