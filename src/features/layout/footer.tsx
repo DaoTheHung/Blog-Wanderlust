@@ -37,7 +37,8 @@ export const Footer = () => {
 									{travelBlog
 										.slice(3, 6)
 										.map((item) => (
-											<div
+											<Link
+												href={`/${item.slug}`}
 												key={item.id}
 												className="flex gap-3"
 											>
@@ -69,7 +70,7 @@ export const Footer = () => {
 														}
 													</div>
 												</div>
-											</div>
+											</Link>
 										))}
 								</div>
 							</div>
@@ -80,7 +81,8 @@ export const Footer = () => {
 									{newsBlog
 										.slice(0, 3)
 										.map((item) => (
-											<div
+											<Link
+												href={`/${item.slug}`}
 												key={item.id}
 												className="flex gap-3"
 											>
@@ -112,7 +114,7 @@ export const Footer = () => {
 														}
 													</div>
 												</div>
-											</div>
+											</Link>
 										))}
 								</div>
 							</div>

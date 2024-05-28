@@ -11,13 +11,13 @@ export const BannerLayout = () => {
 	useEffect(() => {
 		if (pathname) {
 			if (pathname.split('/')[1] === 'diem-den') {
-				setBanner('bg-banner');
+				setBanner('lg:bg-banner banner_m');
 			} else if (pathname.split('/')[1] === 'am-thuc') {
-				setBanner('bg-banne3');
+				setBanner('lg:bg-banne3 bg-banne3_m');
 			} else if (pathname.split('/')[1] === 'tin-tuc') {
-				setBanner('bg-banne1');
+				setBanner('lg:bg-banne1 bg-banne1_m');
 			} else if (pathname.split('/')[1] === 'tips-du-lich') {
-				setBanner('bg-banne2');
+				setBanner('lg:bg-banne2 bg-banne2_m');
 			} else {
 				setBanner('bg-bannerDefault');
 			}

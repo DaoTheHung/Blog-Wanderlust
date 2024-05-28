@@ -92,7 +92,11 @@ const config = {
 				banner: "url('/images/banner/diem-den.png')",
 				banne1: "url('/images/banner/tin-tuc.png')",
 				banne2: "url('/images/banner/tips-du-lich.png')",
-				banne3: "url('/images/banner/am-thuc.png')"
+				banne3: "url('/images/banner/am-thuc.png')",
+				banner_m: "url('/images/banner/1.png')",
+				banne1_m: "url('/images/banner/tintuc.png')",
+				banne2_m: "url('/images/banner/tips.png')",
+				banne3_m: "url('/images/banner/amthuc.png')"
 			}
 		}
 	},
