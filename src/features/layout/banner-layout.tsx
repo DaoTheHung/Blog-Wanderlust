@@ -19,7 +19,7 @@ export const BannerLayout = () => {
 			} else if (pathname.split('/')[1] === 'tips-du-lich') {
 				setBanner('lg:bg-banne2 bg-banne2_m');
 			} else {
-				setBanner('bg-bannerDefault');
+				setBanner('lg:bg-bannerDefault bg-bannerDefault_m');
 			}
 		}
 	}, [pathname]);
@@ -30,7 +30,6 @@ export const BannerLayout = () => {
 				<div
 					className={cn(banner, ' h-[650px] bg-cover bg-center')}
 				></div>
-				
 			</div>
 		</div>
 	);
